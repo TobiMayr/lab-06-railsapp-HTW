@@ -11,12 +11,10 @@ describe "create orders", :type => :feature do
     click_link 'New Order'
     click_button 'Create Order'
     fill_in 'Status', with: :new
-end
-
-  it "shows orders" do
+  end
+    it "shows orders" do
     visit "/customers/#{@customer.id}/orders"
     allorders = Order.all
-    
     expect(page).to have_list 'All Orders'
   end
 end
