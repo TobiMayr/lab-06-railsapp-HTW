@@ -29,6 +29,7 @@ group :development do
   gem 'byebug'
 end
 
+ruby gem 'rails_helper'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
